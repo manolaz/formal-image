@@ -7,7 +7,7 @@ p = pathlib.Path("{}/".format(mainfolder))
 
 def compress(img_file):
     print(img_file)
-    basewidth = 1080
+    basewidth = 1920
     img = Image.open(img_file)
     wpercent = (basewidth/float(img.size[0]))
     hsize = int((float(img.size[1])*float(wpercent)))
